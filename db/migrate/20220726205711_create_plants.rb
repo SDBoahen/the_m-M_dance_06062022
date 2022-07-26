@@ -1,0 +1,14 @@
+class CreatePlants < ActiveRecord::Migration[5.2]
+  def change
+
+    create_table :plants do |t|
+
+      t.string  :name
+      t.boolean :needs_water
+
+      t.integer :student_id
+
+    end
+
+  end
+end
